@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+ 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <script src='script.js'></script>
+  <link href='node_modules/@fullcalendar/core/main.css' rel='stylesheet' />
+  <link href='node_modules/@fullcalendar/daygrid/main.css' rel='stylesheet' />
+  <link href='node_modules/@fullcalendar/timegrid/main.css' rel='stylesheet' />
+  <link href='node_modules/@fullcalendar/list/main.css' rel='stylesheet' />
+
+
+  <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/calendar.css" rel="stylesheet" type="text/css"/>
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  
+
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div class="header">
+
+  </div>
+
+  <div class="navbar">
+
+    <a href="/" class="active">Home</a>
+    <a href="/about">About Us</a>
+    <a href="/events/calendar.html">Events</a>
+    <a href="/contact.html">Contact Us</a>
+  </div>
+
+  <div id=calendar></div>
+
+  <div id='one'>
+    <button id="btn">X</button>
+    <p id="para"></p>
+  </div>
+
+
+
+
+  <!-- footer -->
+
+  <footer class="flex-rw">
+
+    <ul class="footer-list-top">
+            <li>
+                    <h6 class="footer-list-header">Lost Planet Games</h6>
+            </li>
+            <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor"
+                            itemprop="significantLink">Get to Know Us</a></li>
+           
+            <li><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor"
+                            itemprop="significantLink">Become a Game Lover</a></li>
+
+           
+
+            <li><a href='/shop/about-show-schedule' class="generic-anchor footer-list-anchor"
+                            itemprop="significantLink">Check our Events</a></li>
+    </ul>
+    <ul class="footer-list-top">
+            <li>
+                    <h4 class="footer-list-header">The Game Selection</h4>
+            </li>
+
+
+            <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">ANGEL FIGURINES</a></li>
+            <li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">HOME DECOR</a></li>
+            <li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">MUGS</a></li>
+            <li><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor">PET LOVER</a></li>
+            <li><a href='/Ladies-Accessories/cat/id/117' class="generic-anchor footer-list-anchor"
+                            target="_blank">HANDBAGS & JEWELRY</a></li>
+    </ul>
+    <ul class="footer-list-top">
+            <li id='help'>
+                    <h4 class="footer-list-header">Contact us</h4>
+            </li>
+            <li><a class="generic-anchor footer-list-anchor" itemprop="significantLink">(310)-908-2643</a></li>
+            <li><a href='/faq.html' class="generic-anchor footer-list-anchor"
+                            itemprop="significantLink">Lostplanetgames@gmail.com </a></li>
+            <li id='find-a-store'><a class="generic-anchor footer-list-anchor" itemprop="significantLink">hours:
+                            11am - 12pm</a></li>
+
+
+
+
+            <li id='user-registration'><a
+                            href='https://www.google.com/maps/place/Lost+Planet/@33.8283999,-118.3355129,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2b4c4082d06cb:0x5936cd8c0213d0d4!8m2!3d33.8283999!4d-118.3333189'
+                            target="_blank" class="generic-anchor footer-list-anchor"
+                            itemprop="significantLink">2711 Plaza del Amo #511 Torrance, CA 90503</a></li>
+    </ul>
+    <section class="footer-social-section flex-rw">
+            <span class="footer-social-overlap footer-social-connect">
+             <span class="footer-social-small"></span>
+            </span>
+            <span class="footer-social-overlap footer-social-icons-wrapper">
+                    <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank"
+                            title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+                    <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank"
+                            title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+                    
+                    <a href="https://discordapp.com/invite/kAjGK2?fbclid=IwAR0F46Q1SiiZzuuRzCBz7ya5DA59eo3m-IDTJrq5FdoVsGPcob1C2NSRnEY" class="generic-anchor" target="_blank"
+                            title="discord" itemprop="significantLink"><i class="fa fa-user-circle" ></i></a>
+            </span>
+    </section>
+   
+</footer>
+
+
+  <script src='dist/example.js'></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+
+
+    const forDiv = document.getElementById('one');
+    const forP = document.getElementById('para');
+    const test = document.getElementsByClassName("fc-content");
+    const btn = document.getElementById('btn');
+    console.log(test)
+
+    $(document).on("mouseenter", ".fc-content", function (event) {
+      // hover starts code here
+      for (var i = 0; i < test.length; i++) {
+        forP.innerHTML = this.innerText;
+      }
+
+
+      forDiv.style.display = "block";
+      forP.style.display = "block";
+    });
+
+    $(document).on("mouseleave", ".fc-content", function () {
+      // hover ends code here
+      forDiv.style.display = "block";
+      forP.style.display = "block";
+    });
+
+    btn.addEventListener("click", function (event) {
+      forDiv.style.display = "none";
+      forP.style.display = "none";
+    });
+// for(var i=0; i<hover.length; i++){
+//   hover[i].addEventListener("mouseover", function(event){
+//     mouseTarget.style.color = "yellow";
+//   });
+// }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+{{!-- nabr bar --}}
+{{> nav }}
+
+{{!-- main body --}}
+<div class="row">
+  <div class="side">
+    <h2 id="sideevents">Up Coming Events</h2>
+    <div id="events">
+      <h5 >1/28/2020 -- Example Event -- at 2pm - 4pm</h5>
+      <h5> 1/29/2020 -- Example Event -- at 2pm - 4pm</h5>
+     
+    </div>
+    
+    {{!-- Side bar --}}
+    <h3>We are located here!</h3>
+    <p>Please follow these directions and make sure to come straight down the street.</p>
+    <div class="sidebar">
+      <div style="position:relative">
+        <p id="imagesidebar">
+          <img src="img/sidebar-img.jpg" style="position:relative; height:240px; border: 2px solid black" />
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <h2>Welcome to Lost Planet</h2>
+    <h5>Lost Planet is a store built for Gamers and Hobbyists, by a silly dude that has been a geek for his whole life
+      and never really grown up!</h5>
+
+    <p>
+      We do everything from Model Wargaming, Role-Playing Games, Card Games and Board/Tabletop Games. We have an
+      incredible array of Hobby supplies and are happy to procure anything and everything our guests might want / need!
+
+      We are a young store, just over 2-years old, but packed with a experienced and passionate staff and an amazing
+      community.
+      We are here because the great fans of these Games need a fun and awesome place to enjoy their hobbies and make new
+      friends. Our mission is to be your source, not only for amazing products, but for a great community.</p>
+    <br>
+
+    <div class="gallery">
+      <h2>Come and check us out!</h2>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="img/gallery.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="img/gallery-img3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="img/IMG_20200106_160300_514.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="img/gallery1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="img/gallery-img2.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+  </div>
+</div>
+{{!-- Script for the slideshow --}}
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+</script>
+
+<!-- Footer -->
+{{> footer }}
