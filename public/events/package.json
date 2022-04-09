@@ -13,7 +13,7 @@
     "@fullcalendar/interaction": "^4.0.0",
     "@fullcalendar/list": "^4.3.0",
     "@fullcalendar/timegrid": "^4.3.0",
-    "moment": "^2.24.0"
+    "moment": "^2.29.2"
   },
   "devDependencies": {
     "webpack": "^4.29.0",
